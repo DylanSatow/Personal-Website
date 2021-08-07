@@ -1,0 +1,55 @@
+/* Alter Nametag */
+@keyframes fadein {
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* The typing effect */
+
+@keyframes typingName {
+    0% {
+        width: 0%
+    }
+    30% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes typingGreeting {
+    0% {
+        width: 0%;
+        opacity: 1;
+    }
+    30% {
+        width: 100%;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+

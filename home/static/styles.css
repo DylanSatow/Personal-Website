@@ -1,0 +1,68 @@
+body {
+    background-color: rgba(56,56,59,255);
+}
+
+h1, a, p {
+    color: white;
+}
+
+.typewriter {
+    display: inline-flex;
+    align-items: center;
+}
+
+#typewriter-parent{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    position:relative;
+    right: 0%;
+}
+
+.site-header {
+    animation: fadeout 1.3s steps(100);
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+#name_intro {
+    animation: fadeout 3s steps(10);
+    animation-fill-mode: forwards;
+}
+#name_ending {
+    animation: fadein 5s steps(10);
+    animation-fill-mode: forwards;
+}
+
+#greeting{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typingGreeting 3s steps(11, end), blink-caret .75s steps(50, end) infinite;
+    animation-fill-mode: forwards;
+}
+
+#name {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typingName 6s steps(22, end), blink-caret .75s steps(50, end) 6;
+    animation-fill-mode: forwards; 
+}
+
+#portrait {
+    width:450px;
+    height:auto;
+}
+#content {
+    padding-top: 150px;
+    padding-left: 80px;
+}
+.load-content {
+    animation: fadein .75s steps(10,end);
+    animation-fill-mode: forwards;
+}

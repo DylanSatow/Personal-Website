@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+    <div id="typewriter-parent">
+        <div class='typewriter'>
+            <h1 id="greeting">Hello World</h1>
+        </div>
+    </div>
+
+    <div id="content" style="display:none;" class="container">
+        <div class="row">
+            <div class="col-lg">
+                <img src="{% static 'placeholder.jpeg' %}" alt="myimg" id="portrait" style="opacity: 0;">
+            </div>
+            <div class="col">
+                <h1 style="padding-top:100px; opacity: 0;" id='info-text'>Dylan Satow is a student, programmer, and musician currently attending Horace Greeley High School.</h1>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'index.js' %}"></script>
+{% endblock %}
